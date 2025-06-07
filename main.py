@@ -16,4 +16,4 @@ def qwencoder(query):
 
 Interface = gr.Interface(fn=qwencoder,inputs=gr.Text(label="input query"),outputs=gr.Text(label="llm response"))
 
-Interface.launch()
+Interface.launch(share=True)
